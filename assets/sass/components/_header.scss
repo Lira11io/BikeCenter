@@ -1,0 +1,203 @@
+.header {
+  margin: 0 auto;
+}
+
+/*обертка 1 строки хэдера с контактами*/
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  background-color: $color1;
+  color: $color2;
+  padding: 5px 2.5vw;
+  height: min-content;
+}
+
+/*блок с адресами*/
+.header__address {
+  display: flex;
+  justify-content: space-between;
+
+  .header__address-arrow {
+    margin-right: 8px;
+  }
+
+  .header__address-inner {
+    color: $color2;
+    text-decoration: none;
+    margin-right: 2em;
+    @include regular;
+  }
+}
+
+/*блок с телефонами*/
+.header__tel {
+  @include Bold;
+  display: flex;
+
+  .header__tel-num {
+    margin-right: 5px;
+  }
+}
+
+/*блок с кнопками ремонта*/
+.header__address-remont {
+  color: $color2;
+  background-color: #333333;
+  width: 172px;
+  height: 26px;
+  border: none;
+  border-radius: 7px;
+  @include regular;
+}
+
+/*блок с навигацией по сайту*/
+.header__address-nav {
+  display: flex;
+  gap: 1rem;
+  @include regular;
+
+  .header__address-nav-link {
+    color: $color2;
+    text-decoration: none;
+  }
+}
+
+/*обертка для белого блока (2+3) хэдера*/
+.header__block {
+  background-color: $color2;
+  box-shadow: 0px -8px 5px -5px rgba(56, 59, 62, 0.42) inset;
+  padding-bottom: 1em;
+}
+
+/*2 строка хэдера каталог*/
+.header__catalog {
+  margin-top: 4vh;
+  padding: 5px 2.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*кнопка "каталог"*/
+.header__catalog-button-catalog {
+  background-color: $color1;
+  color: $color2;
+  width: 147px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  @include Bold;
+  margin-left: 11px;
+  cursor: pointer;
+
+  .header__catalog-img {
+    margin-right: 5px;
+  }
+}
+
+/*обертка для блока со строкой поиска*/
+.header__catalog-search {
+  width: 659px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  margin-left: 11px;
+  display: flex;
+
+  /*строка поиска*/
+  .header__catalog-search-input {
+    width: 571px;
+    height: 36px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    @include regular;
+    font-size: 14px;
+    border-radius: 9px;
+    background-color: $color2;
+  }
+
+  .header__catalog-search-button {
+    border: none;
+    border-radius: 10px;
+    width: 88px;
+    background: url(/assets/img/search.svg) no-repeat 50% 50%;
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+}
+
+/*блок с меню*/
+.header__catalog-menu {
+  display: flex;
+  align-items: center;
+  margin-left: 11px;
+}
+
+/*кнопка перехода в меню авторизации*/
+.header__catalog-menu-button-enter {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #e0e0e0;
+  @include SemiBold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*блок с пунктами меню*/
+.header__catalog-menu-items {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .header__catalog-menu-items-points {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 8px;
+    padding: 0;
+  }
+
+  .header__catalog-menu-items-txt {
+    margin: 0;
+    @include regular;
+  }
+}
+
+/*третья строка хэдера товары*/
+.header__sections {
+  display: flex;
+  justify-content: space-between;
+  @include SemiBold;
+  font-size: 14px;
+
+  .header__sections-goods {
+    text-decoration: none;
+    padding: 5px 2.5vw;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .header__sections-goods-link {
+    text-decoration: none;
+    color: $color1;
+  }
+
+  .header__sections-sale {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+    gap: 16px;
+  }
+  .header__sections-sale-link {
+    text-decoration: none;
+    color: $color1;
+  }
+}
