@@ -41,18 +41,18 @@
   justify-content: space-between;
   background-color: #f2f3f5;
   border-radius: 20px;
+}
 
-  /*обертка для картинки*/
-  .main__help-img {
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-  .main__help-img-pic {
-    width: 70%;
-    position: absolute;
-    top: -29px;
-  }
+/*обертка для картинки*/
+.main__help-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.main__help-img-pic {
+  width: 70%;
+  position: absolute;
+  top: -29px;
 }
 
 /*размеры квадратных блоков с помощью*/
@@ -76,4 +76,88 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-around;
+}
+/*заголовок 1 блока*/
+.main__help-text-headline {
+  @include Bold;
+  font-size: 24px;
+  margin: 0 auto 1px 9px;
+}
+
+/*текст в 1 блоке*/
+.main__help-text-str {
+  @include regular;
+  font-size: 14px;
+  margin: 0 auto 3em 9px;
+}
+
+/*кнопка в 1 блоке*/
+.main__help-text-btn {
+  @include SemiBold;
+  font-size: 14px;
+  background-color: $color1;
+  color: $color2;
+  width: 216px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  margin: 0 auto 2em 9px;
+  cursor: pointer;
+}
+
+/*обертка для 2 картинки*/
+.main__help-img_card {
+  justify-content: flex-end;
+}
+
+.main__help-img-pic_card {
+  left: 128px;
+}
+
+/*обертка 2 блока с текстом*/
+.main__help-text-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-bottom: 12px;
+}
+/*заголовок 2 блока*/
+.main__help-text-headline-card {
+  @include Bold;
+  font-size: 26px;
+  margin: 0 auto 1px 0;
+}
+
+/*текст в 2 блоке*/
+.main__help-text-str-card {
+  @include SemiBold;
+  font-size: 14px;
+  line-height: 2.5;
+  color: $color1;
+  //margin: 0 auto 3em 9px;
+}
+
+/*секция "Как сделать заказ", "Легкий возврат", "Обратная связь"*/
+.main__order,
+.main__return,
+.main__feedback {
+  padding: 5px 2.5vw;
+}
+.main__order-title,
+.main__return-title,
+.main__feedback-title {
+  @include Bold;
+  font-size: 32px;
+}
+.main__order-blok,
+.main__return-blok,
+.main__feedback-blok {
+  @include regular;
+  font-size: 16px;
+}
+
+.main__feedback-blok_question {
+  @include SemiBold;
+  font-size: 20px;
 }

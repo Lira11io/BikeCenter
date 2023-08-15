@@ -164,7 +164,7 @@
                 />
               </div>
               <div class="main__help-text">
-                <p class="main__help-text-str">Мы всегда рады помочь</p>
+                <p class="main__help-text-headline">Мы всегда рады помочь</p>
                 <p class="main__help-text-str">
                   Если у вас есть нерешенный вопрос
                 </p>
@@ -172,19 +172,31 @@
               </div>
             </div>
             <div class="main__help-blok main__help-blok_square">
-              <div class="main__help-img">
+              <div class="main__help-img main__help-img_card">
                 <img
-                  class="main__help-img-pic"
+                  class="main__help-img-pic main__help-img-pic_card"
                   src="./assets/img/card_money.png"
                   alt="карта и деньги"
                 />
               </div>
-              <p class="main__help-blok-text">Оплата</p>
-              <p class="main__help-blok-text">Как оплатить заказ</p>
-              <p class="main__help-blok-text">Наложенный платеж</p>
-              <p class="main__help-blok-text">Оплата электронными деньгами</p>
-              <p class="main__help-blok-text">Как оплатить, если нет карты</p>
-              <p class="main__help-blok-text">Подарочные карты</p>
+              <div class="main__help-text-card">
+                <p class="main__help-text-headline-card">Оплата</p>
+                <a class="main__help-text-str-card" href="url"
+                  >Как оплатить заказ</a
+                >
+                <a class="main__help-text-str-card" href="url"
+                  >Наложенный платеж</a
+                >
+                <a class="main__help-text-str-card" href="url">
+                  Оплата электронными деньгами
+                </a>
+                <a class="main__help-text-str-card" href="url">
+                  Как оплатить, если нет карты
+                </a>
+                <a class="main__help-text-str-card" href="url"
+                  >Подарочные карты</a
+                >
+              </div>
             </div>
             <div
               class="main__help-blok main__help-blok_rectangle main__help-blok_yellow"
@@ -282,14 +294,21 @@
                 по электронной почте руководителю интернет-магазина
                 info@bike-centre.ru;
               </li>
-              <li>написав отзыв о работе «Байк Центра».</li>
+              <li>написав <a href="url">отзыв</a> о работе «Байк Центра».</li>
             </ul>
-            <p>Не нашли то что нужно?</p>
+            <p class="main__feedback-blok main__feedback-blok_question">
+              Не нашли то что нужно?
+            </p>
             <p>Позвоните нам по номеру 8 (800) 000000000</p>
           </div>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__help">Помощь</div>
+        <div class="footer__about">О нас</div>
+        <div class="footer__contacts">Контакты</div>
+        <div class="footer__download">Скачайте наше приложение</div>
+      </footer>
     </div>
   </body>
 </html>
