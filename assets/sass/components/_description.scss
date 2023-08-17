@@ -1,0 +1,27 @@
+/*секция "Как сделать заказ", "Легкий возврат", "Обратная связь"*/
+.main__order,
+.main__return,
+.main__feedback {
+  padding: 5px 2.5vw;
+}
+.main__order-title,
+.main__return-title,
+.main__feedback-title {
+  @include Bold;
+  font-size: 32px;
+}
+.main__order-blok,
+.main__return-blok,
+.main__feedback-blok {
+  @include regular;
+  font-size: 16px;
+}
+
+.main__feedback-blok_question {
+  @include SemiBold;
+  font-size: 20px;
+}
+
+.main__feedback-link {
+  color: $color3;
+}

@@ -14,7 +14,9 @@
   </head>
   <body>
     <div class="root">
+      <!-- Начало хэдера -->
       <div class="header">
+        <!-- НАчало первой строки хэдера -->
         <div class="header__wrapper">
           <div class="header__address">
             <div class="header__address-arrow">
@@ -44,7 +46,9 @@
             <a href="url" class="header__address-nav-link">Контакты</a>
           </nav>
         </div>
+        <!-- конец первой строки хэдера -->
         <div class="header__block">
+          <!-- начало второй строки хэдера -->
           <div class="header__catalog">
             <svg
               width="195"
@@ -123,6 +127,8 @@
               </div>
             </div>
           </div>
+          <!-- конец второй сроки хэдера -->
+          <!-- начало третьей строки хэдера -->
           <div class="header__sections">
             <div class="header__sections-goods">
               <a href="url" class="header__sections-goods-link"
@@ -144,8 +150,20 @@
             </div>
           </div>
         </div>
+        <!-- конец третьей строки хэдера -->
       </div>
+      <!-- конец хэдера -->
+      <!-- основной контент страницы -->
       <main class="main">
+        <!-- блок с видимостью местоположения пользователя на сайте -->
+        <div class="main__nesting">
+          <a class="main__nesting-link" href="url" title="Главная страница"
+            >Главная страница</a
+          >
+          <span class="main__nesting-divider"></span>
+          <span class="main__nesting-category">Помощь</span>
+        </div>
+        <!-- начало блоков с видами поддержки пользователей -->
         <section class="main__help">
           <div class="main__help-headline">
             <h1 class="main__help-title">Помощь</h1>
@@ -171,14 +189,7 @@
                 <button class="main__help-text-btn">Напишите нам в чат</button>
               </div>
             </div>
-            <div class="main__help-blok main__help-blok_square">
-              <div class="main__help-img main__help-img_card">
-                <img
-                  class="main__help-img-pic main__help-img-pic_card"
-                  src="./assets/img/card_money.png"
-                  alt="карта и деньги"
-                />
-              </div>
+            <div class="main__help-blok-card main__help-blok_square">
               <div class="main__help-text-card">
                 <p class="main__help-text-headline-card">Оплата</p>
                 <a class="main__help-text-str-card" href="url"
@@ -198,27 +209,80 @@
                 >
               </div>
             </div>
-            <div
-              class="main__help-blok main__help-blok_rectangle main__help-blok_yellow"
-            >
-              <div class="main__help-img">
+            <div class="main__help-blok-bonus main__help-blok_rectangle">
+              <div class="main__help-img-card">
                 <img
-                  class="main__help-img-pic"
+                  class="main__help-img-pic-card"
+                  src="./assets/img/card_money.png"
+                  alt="карта и деньги"
+                />
+              </div>
+              <div class="main__help-img-bonus">
+                <img
+                  class="main__help-img-pic-bonus"
                   src="./assets/img/bonus.png"
                   alt="бонусы"
                 />
               </div>
-              <p class="main__help-blok-text">Бонусная система</p>
-              <ul>
-                <li class="main__help-blok-text">Покупай.</li>
-                <li class="main__help-blok-text">Управляй заказами.</li>
-                <li class="main__help-blok-text">
-                  Накапливай cashback—бонусы.
-                </li>
-              </ul>
+              <div class="main__help-text-bonus">
+                <p class="main__help-text-headline-bonus">Бонусная система</p>
+                <ul>
+                  <li class="main__help-text-str-bonus">Покупай.</li>
+                  <li class="main__help-text-str-bonus">Управляй заказами.</li>
+                  <li class="main__help-text-str-bonus">
+                    Накапливай cashback—бонусы.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="main__help-blok-guarantee main__help-blok_rectangle">
+              <div class="main__help-text-guarantee">
+                <p class="main__help-text-headline-guarantee">Гарантия</p>
+                <p class="main__help-text-str-guarantee">
+                  Информацию по всем вопросам гарантии можно узнать тут.
+                </p>
+                <button class="main__help-text-btn-guarantee">
+                  Гарантийные талоны
+                </button>
+              </div>
+            </div>
+            <div class="main__help-blok-return main__help-blok_rectangle">
+              <div class="main__help-text">
+                <p class="main__help-text-headline">Легкий возврат</p>
+                <p class="main__help-text-str">
+                  Вернуть товары легко и удобно, если сохранён его товарный вид
+                  и потребительские свойства.
+                </p>
+                <button class="main__help-text-btn">Узнать подробнее</button>
+              </div>
+              <div class="main__help-img">
+                <img
+                  class="main__help-img-pic"
+                  src="./assets/img/boxes.png"
+                  alt="коробки"
+                />
+              </div>
+            </div>
+            <div class="main__help-blok-delivery main__help-blok_rectangle">
+              <div class="main__help-text">
+                <p class="main__help-text-headline">Доставка</p>
+                <p class="main__help-text-str">
+                  Стоимость доставки будет зависеть от города в котором вы
+                  находитесь
+                </p>
+                <button class="main__help-text-btn">Рассчитать доставку</button>
+              </div>
+              <div class="main__help-img">
+                <img
+                  class="main__help-img-pic"
+                  src="./assets/img/car.png"
+                  alt="машина"
+                />
+              </div>
             </div>
           </div>
         </section>
+        <!-- начало блоков описания -->
         <section class="main__order">
           <h2 class="main__order-title">Как сделать заказ</h2>
           <div class="main__order-blok">
@@ -289,12 +353,18 @@
               нам:
             </p>
             <ul>
-              <li>в социальной сети ВКонтакте;</li>
+              <li>
+                в социальной сети
+                <a class="main__feedback-link" href="url">ВКонтакте</a>;
+              </li>
               <li>
                 по электронной почте руководителю интернет-магазина
                 info@bike-centre.ru;
               </li>
-              <li>написав <a href="url">отзыв</a> о работе «Байк Центра».</li>
+              <li>
+                написав <a class="main__feedback-link" href="url">отзыв</a> о
+                работе «Байк Центра».
+              </li>
             </ul>
             <p class="main__feedback-blok main__feedback-blok_question">
               Не нашли то что нужно?
@@ -302,13 +372,16 @@
             <p>Позвоните нам по номеру 8 (800) 000000000</p>
           </div>
         </section>
+        <!-- конец блоков с описанием -->
       </main>
+      <!-- начало футера -->
       <footer class="footer">
         <div class="footer__help">Помощь</div>
         <div class="footer__about">О нас</div>
         <div class="footer__contacts">Контакты</div>
         <div class="footer__download">Скачайте наше приложение</div>
       </footer>
+      <!-- конец футера -->
     </div>
   </body>
 </html>
