@@ -1,4 +1,19 @@
 .footer {
   background-color: $color1;
   color: $color2;
+  display: flex;
+}
+.footer__help {
+  display: flex;
+  flex-wrap: wrap;
+  .footer__help-title {
+    @include Bold;
+    font-size: 24px;
+  }
+  .footer__help-txt {
+    text-decoration: none;
+    color: $color2;
+    @include regular;
+    font-size: 16px;
+  }
 }
